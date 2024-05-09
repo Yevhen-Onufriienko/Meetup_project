@@ -1,39 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./events.css" />
+  </head>
+  <body>
+    <header class="header__top">
+      <div class="header__section-left">
+        <span class="heder-logo"
+          ><a href="/index.html"><img id="logo" src="./img/svg/SVG (3).svg" alt=""
+        /></a></span>
+        <input
+          class="input-wrapper"
+          id="search_events"
+          type="text"
+          placeholder="Search_events"
+        />
+        <input
+          class="input-wrapper"
+          id="search_city"
+          type="text"
+          placeholder="Mountain View, CA"
+        />
+        <img
+          id="search.svg"
+          src="./img/svg/Button - Search events.svg"
+          alt=""
+        />
+      </div>
+      <div class="header__section-richt">
+        <span class="heder-logo"
+          ><img id="logo-r" src="./img/svg/SVG (3).svg" alt=""
+        /></span>
+        <button class="lang">
+          <img id="lang_svg" src="./img/svg/SVG (4).svg" alt="" />English
+        </button>
+        <button class="login">Log in</button>
+        <button class="blue-btn">Sign up</button>
+      </div>
+    </header>
 
-  Events
-  <div class="select">
-    <svg class="select-arrow" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
-        fill="#212121" stroke="#212121" stroke-width="1.16667" />
-    </svg>
-    <select id="distance-select">
-      <option value="any">Any distance</option>
-      <option value="5">5 km</option>
-      <option value="10">10 km</option>
-      <option value="15">15 km</option>
-      <option value="25">25 km</option>
-      <option value="50">50 km</option>
-      <option value="75">75 km</option>
-      <option value="100">100 km</option>
-    </select>
-  </div>
+    <section>
+      <div class="container">
+        <div class="main-events">
+          <div class="content">
+            <div class="content-title">
+              <span id="near-title">Events near New York, NY</span>
+              <a id="event-link" href="#">Events</a>
+              <div class="seiect__container">
+                <div class="select">
+                  <svg
+                    class="select-arrow"
+                    width="15"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
+                      fill="#212121"
+                      stroke="#212121"
+                      stroke-width="1.16667"
+                    />
+                  </svg>
+                  <select name="" id="type-event">
+                    <option value="online">Online</option>
+                    <option value="any">Any type</option>
+                    <option value="offline">Offline</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <svg
+                    class="select-arrow"
+                    width="15"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
+                      fill="#212121"
+                      stroke="#212121"
+                      stroke-width="1.16667"
+                    />
+                  </svg>
+                  <select name="" id="distance">
+                    <option value="any-type">Any distance</option>
+                    <option value="5">5 km</option>
+                    <option value="10">10 km</option>
+                    <option value="15">15 km</option>
+                    <option value="25">25 km</option>
+                    <option value="50">50 km</option>
+                    <option value="75">75 km</option>
+                    <option value="100">100 km</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <svg
+                    class="select-arrow"
+                    width="15"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
+                      fill="#212121"
+                      stroke="#212121"
+                      stroke-width="1.16667"
+                    />
+                  </svg>
+                  <select name="" id="categories">
+                    <option value="any-category">Any category</option>
+                    <option value="Social Activities">Social Activities</option>
+                    <option value="Hobbies and Passions">
+                      Hobbies and Passions
+                    </option>
+                    <option value="Health and Wellbeing">
+                      Health and Wellbeing
+                    </option>
+                    <option value="Business">Business</option>
+                    <option value="Technology">Technology</option>
+                  </select>
+                </div>
+              </div>
 
-  <div class="events">
+              <div class="events-block"></div>
+            </div>
+          </div>
+          <div class="map__r">
+            <div class="map-title">
+              <span>Find events near</span>
+              <span id="city-title">New York, NY</span>
+            </div>
+            <div class="map">
+              <img id="map-close" src="./img/svg/map-close.svg" alt="" />
+              <img id="browse" src="./img/svg/browse-map.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-    
+    <!-- <div class="select">
+      <svg
+        class="select-arrow"
+        width="15"
+        height="14"
+        viewBox="0 0 15 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
+          fill="#212121"
+          stroke="#212121"
+          stroke-width="1.16667"
+        />
+      </svg>
+      <select id="distance">
+        <option value="any">Any distance</option>
+        <option value="5">5 km</option>
+        <option value="10">10 km</option>
+        <option value="15">15 km</option>
+        <option value="25">25 km</option>
+        <option value="50">50 km</option>
+        <option value="75">75 km</option>
+        <option value="100">100 km</option>
+      </select>
+    </div>
+    <div class="select">
+      <svg
+        class="select-arrow"
+        width="15"
+        height="14"
+        viewBox="0 0 15 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
+          fill="#212121"
+          stroke="#212121"
+          stroke-width="1.16667"
+        />
+      </svg>
+      <select id="categories">
+        <option value="any">Any Category</option>
+        <option value="Social Activities">Social Activities</option>
+        <option value="Hobbies and Passions">Hobbies and Passions</option>
+        <option value="Health and Wellbeing">Health and Wellbeing</option>
+        <option value="Business">Business</option>
+        <option value="Technology">Technology</option>
+      </select>
+    </div>
+    <div class="select">
+      <svg
+        class="select-arrow"
+        width="15"
+        height="14"
+        viewBox="0 0 15 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2.00021 4.35763C2.17106 4.18678 2.44808 4.18678 2.61893 4.35763L7.45644 9.19517C7.51343 9.25211 7.60571 9.25211 7.6627 9.19517L12.5002 4.35763C12.6711 4.18678 12.9481 4.18678 13.1189 4.35763C13.2898 4.52848 13.2898 4.8055 13.1189 4.97635L8.28138 9.81386C7.88274 10.2125 7.2364 10.2125 6.83775 9.81386L2.00021 4.97635C1.82936 4.8055 1.82936 4.52848 2.00021 4.35763Z"
+          fill="#212121"
+          stroke="#212121"
+          stroke-width="1.16667"
+        />
+      </svg>
+      <select id="type-event">
+        <option value="any">Any Type</option>
+        <option value="Online">Online</option>
+        <option value="Offline">Offline</option>
+      </select>
+    </div>
 
+    <div class="events-block"></div> -->
 
- <a href="/index.html">Home</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer__heder">
+            <h4>Create your own Meetup group.</h4>
+            <button class="footer__btn">Get Started</button>
+          </div>
+          <div class="footer__content">
+            <div class="footer__list">
+              <h4>Your Account</h4>
+              <p>Sign up</p>
+              <p>Log in</p>
+              <p>Help</p>
+              <p>Become an Affiliate</p>
+            </div>
+            <div class="footer__list">
+              <h4>Discover</h4>
+              <p>Groups</p>
+              <p>Calendar</p>
+              <p>Topics</p>
+              <p>Cities</p>
+              <p>Online Events</p>
+              <p>Local Guides</p>
+              <p>Make Friends</p>
+            </div>
+            <div class="footer__list">
+              <h4>Meetup</h4>
+              <p>About</p>
+              <p>Blog</p>
+              <p>Meetup Pro</p>
+              <p>Careers</p>
+              <p>Apps</p>
+              <p>Podcast</p>
+            </div>
+          </div>
+          <h4>Follow us</h4>
+          <div class="footer__content-logo">
+            <div class="footer__logos">
+              <div class="data-icon">
+                <img
+                  src="./img/svg/Link - Meetup on Facebook → SVG.svg"
+                  alt=""
+                />
+              </div>
+              <div class="data-icon">
+                <img
+                  src="./img/svg/Link - Meetup on Twitter → SVG.svg"
+                  alt=""
+                />
+              </div>
+              <div class="data-icon">
+                <img
+                  src="./img/svg/Link - Meetup on YouTube → SVG.svg"
+                  alt=""
+                />
+              </div>
+              <div class="data-icon">
+                <img src="./img/svg/Link - Instagram → SVG.svg" alt="" />
+              </div>
+              <div class="data-icon">
+                <img src="./img/svg/Link - TikTok → SVG.svg" alt="" />
+              </div>
+            </div>
+            <div class="footer__logos-l">
+              <img src="./img/cities/download_en-US.svg fill.png" alt="" />
+              <img src="./img/cities/Group.png" alt="" />
+            </div>
+          </div>
+          <div class="footer__content-bottom">
+            <p>© 2024 Meetup</p>
+
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Do Not Sell or Share My Personal Data</p>
+            <p>Cookie Policy</p>
+            <p>Help</p>
+          </div>
+          <p class="mobile">© 2024 Meetup</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="/index.html">Home</a>
     <script type="module" src="./main.js"></script>
-</body>
+  </body>
 </html>

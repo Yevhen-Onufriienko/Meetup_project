@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="header__top">
       <div class="header__section-left">
         <span class="heder-logo"
-          ><img id="logo" src="./img/svg/SVG (3).svg" alt=""
-        /></span>
+          ><a href="/index.html"
+            ><img id="logo" src="./img/svg/SVG (3).svg" alt="" /></a
+        ></span>
         <input
           class="input-wrapper"
           id="search_events"
@@ -30,10 +37,10 @@
           alt=""
         />
       </div>
+      <span class="heder-logo"
+        ><img id="logo-r" src="./img/svg/SVG (3).svg" alt=""
+      /></span>
       <div class="header__section-richt">
-        <span class="heder-logo"
-          ><img id="logo-r" src="./img/svg/SVG (3).svg" alt=""
-        /></span>
         <button class="lang">
           <img id="lang_svg" src="./img/svg/SVG (4).svg" alt="" />English
         </button>
@@ -52,9 +59,16 @@
               skill sharing, there are thousands of people who share it on
               Meetup. Events are happening every day—sign up to join the fun.
             </p>
-            <button class="hiro-btn">Join Meetup</button>
+            <a href="/events.html">
+              <button class="hiro-btn">Join Meetup</button></a
+            >
           </div>
-          <img id="hero-img" src="./img/irl_event.svg.png" alt="" class="hero__image" />
+          <img
+            id="hero-img"
+            src="./img/irl_event.svg.png"
+            alt=""
+            class="hero__image"
+          />
         </div>
       </div>
     </section>
@@ -78,15 +92,18 @@
                 src="./img/grid/group-cover-10-wide.webp.png"
                 alt=""
               />
-              <h3>Day Trading Idea and Strategy</h3>
-               <p class="category">Business (5 km)</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Mon, Mar 18 · 7:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />1 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>Day Trading Idea and Strategy</h3>
+                <p class="category">Business (5 km)</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Mon, Mar 18 · 7:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />1 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
@@ -96,46 +113,55 @@
                 src="./img/grid/event_519345287.webp.png"
                 alt=""
               />
-              <h3>Let's Talk Networking: JPMorgan Chase in Palo Alto</h3>
-              <p class="category">Business (25 km)</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Tue, Mar 19 · 5:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />41 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>Let's Talk Networking: JPMorgan Chase in Palo Alto</h3>
+                <p class="category">Business (25 km)</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Tue, Mar 19 · 5:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />41 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link.png" alt="" />
-              <h3>
-                Tech Talks & Quiz: Next- Gen Database Solutions for Emerging Use
-                Cases
-              </h3>
-              <p class="category">Technology</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 6:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />40 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>
+                  Tech Talks & Quiz: Next- Gen Database Solutions for Emerging
+                  Use Cases
+                </h3>
+                <p class="category">Technology</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 6:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />40 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link (1).png" alt="" />
-              <h3>INFORMS San Francisco Chapter In-Person Event</h3>
-              <p class="category">Health and Wellbeing (50 km)</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 28 · 5:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />41 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>INFORMS San Francisco Chapter In-Person Event</h3>
+                <p class="category">Health and Wellbeing (50 km)</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 28 · 5:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />41 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
@@ -145,58 +171,72 @@
                 src="./img/grid/event_518548420.webp.png"
                 alt=""
               />
-              <h3>AI Wednesdays - Meet and Greet!</h3>
-               <p class="category">Technology (5 km)</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 6:30 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />29 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>AI Wednesdays - Meet and Greet!</h3>
+                <p class="category">Technology (5 km)</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 6:30 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />29 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link (2).png" alt="" />
-              <h3>ROS By-The-Bay March 2024</h3>
-               <p class="category">Social Activities</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 21 · 6:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />51 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>ROS By-The-Bay March 2024</h3>
+                <p class="category">Social Activities</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 21 · 6:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />51 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link (3).png" alt="" />
-              <h3>Free Christian Singles' Dinner</h3>
-               <p class="category">Hobbies and Passions (10 km)</p>
-              <p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Fri, Mar 29 · 6:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />11 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>Free Christian Singles' Dinner</h3>
+                <p class="category">Hobbies and Passions (10 km)</p>
+                <p></p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Fri, Mar 29 · 6:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />11 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link (4).png" alt="" />
-              <h3>In-person: Deep Dive into RAG Architectures (Food served)</h3>
-               <p class="category">Hobbies and Passions (50 km)</p>
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 14 · 5:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />16 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>
+                  In-person: Deep Dive into RAG Architectures (Food served)
+                </h3>
+                <p class="category">Hobbies and Passions (50 km)</p>
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 14 · 5:00 PM
+                  PDT
+                </p>
+                <p>
+                  <img src="./img/svg/SVG (1).svg" alt="" />16 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
         </div>
@@ -206,8 +246,9 @@
     <section class="Upcoming">
       <div class="container">
         <div class="upcoming__heder">
-          <h3>Upcoming online events</h3>
+          
           <div class="link__container">
+            <h3>Upcoming online events</h3>
             <a href="">See all events</a>
           </div>
         </div>
@@ -219,60 +260,72 @@
                 src="./img/grid/event_519688853.webp.png"
                 alt=""
               />
-              <h3>
-                Amazing On-Demand 15 Min Interviews with Top Coaches and
-                Speakers
-              </h3>
-              Business (25 km)
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 14 · 6:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />3 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>
+                  Amazing On-Demand 15 Min Interviews with Top Coaches and
+                  Speakers
+                </h3>
+                Business (25 km)
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 14 · 6:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />3 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/272x153.webp.png" alt="" />
-              <h3>Vision Pro Developers Online Meetup</h3>
-              Technology
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 7:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />51 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>Vision Pro Developers Online Meetup</h3>
+                Technology
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 7:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />51 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link (5).png" alt="" />
-              <h3>Significant Musical Moments</h3>
-              Hobbies and Passions (10 km)
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 6:00 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />16 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>Significant Musical Moments</h3>
+                Hobbies and Passions (10 km)
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Wed, Mar 13 · 6:00 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />16 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
           <div class="grid-element">
             <a href="#">
               <img class="grid-img" src="./img/grid/Link (6).png" alt="" />
-              <h3>FREE Webinar : Introduction to Power BI</h3>
-              Technology
-              <p>
-                <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 14 · 5:30 PM PDT
-              </p>
-              <p>
-                <img src="./img/svg/SVG (1).svg" alt="" />33 going
-                <img src="./img/svg/SVG (2).svg" alt="" />Free
-              </p>
+              <div class="grid__text">
+                <h3>FREE Webinar : Introduction to Power BI</h3>
+                Technology
+                <p>
+                  <img src="./img/svg/SVG.svg" alt="" />Thu, Mar 14 · 5:30 PM
+                  PDT
+                </p>
+                <p class="going">
+                  <img src="./img/svg/SVG (1).svg" alt="" />33 going
+                  <img src="./img/svg/SVG (2).svg" alt="" />Free
+                </p>
+              </div>
             </a>
           </div>
         </div>
@@ -308,35 +361,35 @@
           <div class="explore__boxes">
             <div class="icon-box">
               <img src="./img/svg/travel_and_outdoor.svg fill.svg" alt="" />
-              <p>Travel and Outdoor</p>
+              <p class="explore__text">Travel and Outdoor</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/social_activities.svg.svg" alt="" />
-              <p>Social Activities</p>
+              <p class="explore__text">Social Activities</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/hobbies_and_passions.svg fill.svg" alt="" />
-              <p>Hobbies and Passions</p>
+              <p class="explore__text">Hobbies and Passions</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/sports_and_fitness.svg.svg" alt="" />
-              <p>Sports and Fitness</p>
+              <p class="explore__text">Sports and Fitness</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/health_and_wellness.svg.svg" alt="" />
-              <p>Health and Wellbeing</p>
+              <p class="explore__text">Health and Wellbeing</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/technology.svg.svg" alt="" />
-              <p>Technology</p>
+              <p class="explore__text">Technology</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/art_and_culture.svg.svg" alt="" />
-              <p>Art and Culture</p>
+              <p class="explore__text">Art and Culture</p>
             </div>
             <div class="icon-box">
               <img src="./img/svg/games.svg.svg" alt="" />
-              <p>Games</p>
+              <p class="explore__text">Games</p>
             </div>
           </div>
         </div>
@@ -387,7 +440,9 @@
             </div>
             <div class="work__text">
               <h4>Discover events and groups</h4>
-              <p class="work__p">See who's hosting local events for all the things you love</p>
+              <p class="work__p">
+                See who's hosting local events for all the things you love
+              </p>
               <a href="#">Search events and groups</a>
             </div>
           </div>
@@ -490,7 +545,6 @@
           </div>
           <h4>Follow us</h4>
           <div class="footer__content-logo">
-             
             <div class="footer__logos">
               <div class="data-icon">
                 <img
@@ -524,7 +578,7 @@
           </div>
           <div class="footer__content-bottom">
             <p>© 2024 Meetup</p>
-            
+
             <p>Terms of Service</p>
             <p>Privacy Policy</p>
             <p>Do Not Sell or Share My Personal Data</p>
